@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-%s$b&i(5a=d2_u#hcsc4utf1c&)c53(ny7ufwrexbh4*6f+b-d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-tomoverment-blog-3q9ld91nie9.ws-eu114.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-tomoverment-blog-3u19xdb8hyv.ws-eu114.gitpod.io', '.herokuapp.com']
 
 
 # Application definition
@@ -106,6 +106,11 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.gitpod.io",
+    "https://*.herokuapp.com"
 ]
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
