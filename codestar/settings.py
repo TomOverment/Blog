@@ -119,6 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
@@ -126,7 +127,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
